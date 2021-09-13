@@ -50,7 +50,7 @@ const showWelcomeScreen = () => {
     gameButton.innerHTML = 'Начать игру';
 
     gameButton.addEventListener('click', () => {
-        if (input.value.trim.length != 0) {
+        if (input.value.trim().length != 0) {
             showGameScreen(input.value);
         } else {
             input.value = '';
